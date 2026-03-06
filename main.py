@@ -18,7 +18,87 @@ productos = [
         "nombre": "pera",
         "cantidad": 12,
         "precio": 6
-    }
+    },
+    {
+        "nombre": "uva",
+        "cantidad": 8,
+        "precio": 4
+    },
+    {
+        "nombre": "sandia",
+        "cantidad": 5,
+        "precio": 10
+    },
+    {
+        "nombre": "zanahoria",
+        "cantidad": 18,
+        "precio": 2
+    },
+    {
+        "nombre": "lechuga",
+        "cantidad": 25,
+        "precio": 3
+    },
+    {
+        "nombre": "tomate",
+        "cantidad": 30,
+        "precio": 4
+    },
+    {
+        "nombre": "pepino",
+        "cantidad": 22,
+        "precio": 3
+    },
+    {
+        "nombre": "coca cola",
+        "cantidad": 50,
+        "precio": 2
+    },
+    {
+        "nombre": "pepsi",
+        "cantidad": 40,
+        "precio": 2
+    },
+    {
+        "nombre": "fanta",
+        "cantidad": 30,
+        "precio": 2
+    },
+    {
+        "nombre": "sprite",
+        "cantidad": 20,
+        "precio": 2
+    },
+    {
+        "nombre": "agua",
+        "cantidad": 100,
+        "precio": 1
+    },
+    {
+        "nombre": "nachos",
+        "cantidad": 25,
+        "precio": 3
+    },
+    {
+        "nombre": "papas fritas",
+        "cantidad": 30,
+        "precio": 4
+    },
+    {
+        "nombre": "chocolate",
+        "cantidad": 15,
+        "precio": 5
+    },
+    {
+        "nombre": "galletas",
+        "cantidad": 20,
+        "precio": 3
+    },
+    {
+        "nombre": "helado",
+        "cantidad": 10,
+        "precio": 6
+    }       
 ]
 
 def menu ():
