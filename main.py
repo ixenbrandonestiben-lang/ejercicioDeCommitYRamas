@@ -86,7 +86,17 @@ def eliminar():
             print(f"Producto '{nombre}' no encontrado en el inventario.")
     except ValueError:
         print("Error: cantidad debe ser un numero entero.")
-           
+
+def valorInventario():
+    try:
+        total = 0
+        for producto in productos:
+            total += producto["precio"] * producto["cantidad"]
+        print(f"El valor total del inventario es: {total}")
+    except ValueError:
+        print("Error: cantidad y precio deben ser numeros.")
+   
+              
 def separador():
     print("-"*60)
 
@@ -115,7 +125,7 @@ while True:
     elif op == 4:
         eliminar()
     elif op == 5:
-        print("Calcular valor total del inventario")
+        valorInventario()
     elif op == 6:
         print("Saliendo del sistema...")
         break
