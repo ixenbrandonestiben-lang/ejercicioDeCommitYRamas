@@ -70,8 +70,23 @@ def actualizar():
     except ValueError:
         print("Error: cantidad debe ser un numero entero.")
         
-         
+def eliminar():
+    try:
+        nombre = input("Ingrese el nombre del producto a eliminar: ")
+        encontrado = False
+    
+        for producto in productos:
+            if producto["nombre"] == nombre:
+                productos.remove(producto)
+                print(f"Producto '{nombre}' eliminado del inventario.")
+                encontrado = True
+                break
         
+        if not encontrado:
+            print(f"Producto '{nombre}' no encontrado en el inventario.")
+    except ValueError:
+        print("Error: cantidad debe ser un numero entero.")
+           
 def separador():
     print("-"*60)
 
@@ -89,14 +104,16 @@ while True:
     op = opc()
     separador()
     if op == 1:
-            agregar()
+        
+        agregar()
             
     elif op == 2:
+        
         listar()
     elif op == 3:
         actualizar()
     elif op == 4:
-        print("Eliminar producto")
+        eliminar()
     elif op == 5:
         print("Calcular valor total del inventario")
     elif op == 6:
