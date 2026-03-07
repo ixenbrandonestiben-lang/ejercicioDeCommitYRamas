@@ -109,7 +109,8 @@ def menu ():
         print("3. actualizar producto")
         print("4. eliminar producto")
         print("5. calcular valor total del inventario")
-        print("6. salir")   
+        print("6. productos con poca cantidad")
+        print("7. salir")   
     
         
 def agregar():
@@ -176,7 +177,12 @@ def valorInventario():
     except ValueError:
         print("Error: cantidad y precio deben ser numeros.")
    
-              
+def poca_cantidad():
+    print("Productos con poca cantidad (menos de 10 unidades):")
+    for producto in productos:
+        if producto["cantidad"] < 10:
+            print(f"Nombre: {producto['nombre']}, Cantidad: {producto['cantidad']}, Precio: {producto['precio']}")
+
 def separador():
     print("-"*60)
 
@@ -207,9 +213,10 @@ while True:
     elif op == 5:
         valorInventario()
     elif op == 6:
+        poca_cantidad()
+    elif op == 7:
         print("Saliendo del sistema...")
         break
     else:
         print("Opcion no valida, intente de nuevo.")
     
-        
