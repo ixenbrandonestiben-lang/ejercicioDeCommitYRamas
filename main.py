@@ -26,7 +26,9 @@ def agregar():
     
 def listar():
     print("Lista de productos:")
+
     for producto in productos:
+        
         print(f"Nombre: {producto['nombre']}, Cantidad: {producto['cantidad']}, Precio: {producto['precio']}")
         
         
