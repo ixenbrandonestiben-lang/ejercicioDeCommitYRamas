@@ -73,13 +73,19 @@ def actualizar():
 def eliminar():
     try:
         nombre = input("Ingrese el nombre del producto a eliminar: ")
+
         encontrado = False
     
         for producto in productos:
+
             if producto["nombre"] == nombre:
+
                 productos.remove(producto)
+                
                 print(f"Producto '{nombre}' eliminado del inventario.")
+                
                 encontrado = True
+                
                 break
         
         if not encontrado:
