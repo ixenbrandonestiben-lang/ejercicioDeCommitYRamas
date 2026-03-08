@@ -25,7 +25,7 @@ def agregar():
     productos.append(producto)
     
 def listar():
-    print("Lista de productos:")
+    print("productos que tenemos al servicio, para poder vender: ")
 
     for producto in productos:
         
