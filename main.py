@@ -98,6 +98,11 @@ productos = [
         "nombre": "helado",
         "cantidad": 10,
         "precio": 6
+    },
+    {
+        "nombre": "cafe",
+        "cantidad": 50,
+        "precio": 2
     }       
 ]
 
