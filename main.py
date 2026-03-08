@@ -130,8 +130,10 @@ def agregar():
         
         
 def listar():
-    print("Lista de productos:")
+    print("productos que tenemos al servicio, para poder vender: ")
+
     for producto in productos:
+        
         print(f"Nombre: {producto['nombre']}, Cantidad: {producto['cantidad']}, Precio: {producto['precio']}")
         
 def actualizar():
